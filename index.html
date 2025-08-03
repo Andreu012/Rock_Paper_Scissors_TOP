@@ -3,16 +3,32 @@
 <head>
     <meta charset="UTF-8" />
     <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href = "styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <p>This is a Rock, Paper, Scissors game that takes place in the terminal! Press Control + Shift + C, to open the terminal!</p>
-    <style>
-        p {
-            font-weight:650;
-            font-size:16px;
-            font-family: sans-serif;
-        }
-    </style>
-    <script src = "index.js" defer></script>
+    <h1>Rock, Paper, Scissors</h1>
+    <div id = 'midsection'>
+        <div id = 'left'>
+            <div class = 'selection-column'>
+                <p>Choose an option</p>
+                <img src = "rockIMG.png" id = "player-rock" alt = "rock" class = 'option'>
+                <img src = "paperIMG.png" id = "player-paper" alt = "paper" class = 'option'>
+                <img src = "scissorsIMG.png" id = "player-scissors" alt = "scissors" class = 'option'>
+            </div>
+        </div>
+        <span id = 'vs'>Versus</span>
+        <div id = 'right'>
+            <div class = 'selection-column'>
+                <p>Computer's Choice</p>
+                <img src = "rockIMG.png" alt = "rock" class = 'option' id = 'computer-rock' >
+                <img src = "paperIMG.png" alt = "paper" class = 'option' id = 'computer-paper'>
+                <img src = "scissorsIMG.png" alt = "scissors"class = 'option' id = 'computer-scissors'>
+            </div>
+        </div>
+    </div>
+    <span id = 'outcome'></span>
+    <span id = 'score'>score</span>
+    <script src = 'index.js' defer></script>
 </body>
 </html>
